@@ -29,3 +29,5 @@ Just by adding issues you contribute. And hopefully some of you can even help sq
 1. Start `hue2.exe`
 2. Go to your web browser
 3. Open `http://localhost:3000`
+
+You must have the executable beside the `assets` directory.
