@@ -2,6 +2,14 @@
 
 A public version of HUE for community development!
 
+## Current state
+
+The program is currently very UNSTABLE, meaning that bugs are likely to occur.
+At the moment this should only affect
+- `spnpccharacters.xml`
+
+Please do a backup of said files before you try it out.
+
 ## The developers
 We don't have so much time to spend on this project, sadly.
 However, our thought has been to recreate HUE into something that more people can join in on.
@@ -23,6 +31,8 @@ Just by adding issues you contribute. And hopefully some of you can even help sq
   - However, still relative simple to learn. Not much more complicated than Python.
 - GUI is pure HTML/CSS/JS
   - A lot of people know HTML/CSS thus, hopefully, people in the community who are knowledgeable in web-design can contribute without any programming knowledge.
+- Any file locations are retreived from `assets/xml/locs.xml`
+  - Easy customabilty for people who have the game at non-standard locations.
   
 ## How to run
 
