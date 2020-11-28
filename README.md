@@ -23,3 +23,9 @@ Just by adding issues you contribute. And hopefully some of you can even help sq
   - However, still relative simple to learn. Not much more complicated than Python.
 - GUI is pure HTML/CSS/JS
   - A lot of people know HTML/CSS thus, hopefully, people in the community who are knowledgeable in web-design can contribute without any programming knowledge.
+  
+## How to run
+
+1. Start `hue2.exe`
+2. Go to your web browser
+3. Open `http://localhost:3000`
