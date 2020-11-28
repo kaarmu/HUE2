@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="static/css/all.css">
+    <link rel="stylesheet" type="text/css" href="static/css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="static/css/config.css">
+    <link rel="stylesheet" type="text/css" href="static/css/sidepanel.css">
+    <link rel="stylesheet" type="text/css" href="static/css/output.css">
+    <link rel="stylesheet" type="text/css" href="static/css/input.css">
+</head>
+
+<body>
+
+    <div class="container" id="config">
+
+        <div id="config-project-name">
+            <h1>Main</h1>
+        </div>
+        <div class="vertdivider"></div>
+        <div id="config-project">
+            
+            <div>
+                <h4>Project:</h4>
+            </div>
+            
+            <div>
+                <div class="button btn">
+                    <div id="underline"></div>
+                    <p class="btn-text">Edit</p>
+                </div>
+    
+                <div class="button btn">
+                    <div id="underline"></div>
+                    <p class="btn-text">Manage</p>
+                </div>
+    
+            </div>
+
+        </div>
+        <div class="vertdivider"></div>
+        <div id="config-config">
+
+            <div>
+                <div>
+                    <h4>Baud rate: nnnn </h4>
+                </div>
+                    
+                <div class="button btn">
+                    <div id="underline"></div>
+                    <p class="btn-text">Edit</p>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <h4>Serial port: X</h4>
+                </div>
+    
+                <div class="button btn">
+                    <div id="underline"></div>
+                    <p class="btn-text">Edit</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="main container">
+
+        <div class="side-panel container" id="actions">
+            
+            <div>
+                <div class="bigbutton btn">
+                    <div id="underline"></div>
+                    <p class="btn-text">New Action</p>
+                </div>
+        
+                <div class="bigbutton btn">
+                    <div id="underline"></div>
+                    <p class="btn-text">Edit Action</p>
+                </div>
+            </div>
+    
+            <div class="horizdivider"></div>
+    
+            <div>
+                <div class="longbutton btn" onclick="action(this)">
+                    <div id="underline"></div>
+                    <p class="btn-text">Action 1</p>
+                </div>
+        
+                <div class="longbutton btn">
+                    <div id="underline"></div>
+                    <p class="btn-text">Action 2</p>
+                </div>
+        
+                <div class="longbutton btn">
+                    <div id="underline"></div>
+                    <p class="btn-text">Action 3</p>
+                </div>
+            </div>
+
+        </div>
+    
+        <div class="io container">
+            
+            <div class="container" id="output">
+                
+                <div>
+                    <!-- <h3 id="from-fegui">0x81, 0x01, 0x02, 0x20, 0x00, 0xA4 </h3>
+                    <h3 id="to-fegui">0x81, 0x01, 0x00, N/A, 0x82</h3> -->
+                    <h3 id="from-fegui"></h3>
+                    <h3 id="to-fegui"></h3>
+                </div>
+
+                <div class="horizdivider"></div>
+
+                <div id="old-messages" class="scroller">
+                    <!-- Old Messages appear in here as <p> -->
+                </div>
+
+            </div>
+        
+            <div class="container" id="input">
+                <form id="rawcmd">
+                    <div>
+                        <input id="rawcmdinp" name="rawcmd" type="text" placeholder="Raw Bull" spellcheck="false"/>
+                    </div>
+                    
+                    <div>
+                        <div class="button btn">
+                            <div id="underline"></div>
+                            <p class="btn-text">Send</p>
+                        </div>
+            
+                        <div class="longbutton btn">
+                            <div id="underline"></div>
+                            <p class="btn-text">Change view</p>
+                        </div>
+                    </div> 
+        
+                </form>
+            </div>
+
+        </div>
+        
+        <div class="side-panel container" id="bulls">
+
+            <div>
+                <div class="bigbutton btn">
+                    <div id="underline"></div>
+                    <p class="btn-text">New Bull</p>
+                </div>
+        
+                <div class="bigbutton btn">
+                    <div id="underline"></div>
+                    <p class="btn-text">Edit Bull</p>
+                </div>
+            </div>
+    
+            <div class="horizdivider"></div>
+    
+            <div>
+                <div class="longbutton btn" id="b1" onclick="bull(this)">
+                    <div id="underline"></div>
+                    <p class="btn-text">Bull 1</p>
+                </div>
+        
+                <div class="longbutton btn" id="b2">
+                    <div id="underline"></div>
+                    <p class="btn-text">Bull 2</p>
+                </div>
+        
+                <div class="longbutton btn" id="b3">
+                    <div id="underline"></div>
+                    <p class="btn-text">Bull 3</p>
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+    
+
+</body>
+
+</html>

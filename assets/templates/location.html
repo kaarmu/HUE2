@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Location</title>
+    <style>
+        body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        }
+        .task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+    </style>
+</head>
+
+<body class="vscode-body vscode-light">
+    <h1 id="welcome-to-hue-2">Welcome to HUE 2!</h1>
+    
+    <hr>
+    
+    <h2 id="location">Location</h2>
+    <p>Please input game directory!</p>
+    <form id="location-control" method="POST">
+        <label for="game_dir">Game directory:</label>
+        <input type="text" id="game_dir" name="game_dir" value="{{.GameDir}}">
+        <br>
+        <button type="submit">Go!</button>
+    </form>
+    
+    <br><hr>
+
+</body>
+</html>

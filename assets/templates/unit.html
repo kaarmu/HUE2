@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unit</title>
+    
+    <style>
+        body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        }
+        .task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+    </style>
+</head>
+
+<body>
+    <h1 id="unit_name">{{.Name}}</h1>
+    
+    <a href="/unitselect">Go back</a>
+
+    <form id="unit-control" method="POST">
+        <button type="submit">Save unit</button>
+    </form>
+    
+    <br><hr>
+    
+    <h2 id="skill-editor">Skill Editor</h2>
+        <ul>
+            {{range .Skills}}
+            <li>
+                <label form="unit-control" for="skill-{{.Name}}">{{.Name}}:</label>
+                <input form="unit-control" name="skill-{{.Name}}" value="{{.Value}}">
+            </li>
+            {{end}}
+        </ul>
+
+    <br><hr>
+    
+    <h2 id="equipment-editor">Equipment Editor</h2>
+        <h3 id="other-equipments"><em>Other equipments</em></h3>
+        <ul>
+            {{range .Equipments}}
+            <li>
+                <label form="unit-control" for="equipment-other-{{.Slot}}">{{.Slot}}:</label>
+                <input form="unit-control" name="equipment-other-{{.Slot}}" value="{{.Value}}">
+            </li>
+            {{end}}
+        </ul>
+
+        <h3 id="equipment-sets"><em>Equipment Sets</em></h3>
+        <ul>
+            {{range .EquipmentSets}}
+            <li><p>{{.Name}}</p>
+                <ul>
+                    {{$equipmentSetName := .Name}}
+                    {{range .Equipments}}
+                    <li>
+                        <label form="unit-control" for="equipment-{{$equipmentSetName}}-{{.Slot}}">{{.Slot}}:</label>
+                        <input form="unit-control" name="equipment-{{$equipmentSetName}}-{{.Slot}}" value="{{.Value}}">
+                    </li>
+                    {{end}}
+                </ul>
+            </li>
+            {{end}}
+        </ul>
+     
+    <br><hr>
+
+</body>
+</html>

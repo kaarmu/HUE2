@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Selection</title>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+    </style>
+</head>
+
+<body>
+    <h1>Select unit</h1>
+    <form id="unitselect-control" method="POST">
+        <button>Save all</button>
+        <!-- load from other xml, other control, etc. -->
+    </form>
+    
+    <br><hr>
+
+    {{range .Cultures}}
+        <h2 class="culture_name">{{.Name}}</h2>
+        {{range .Groups}}
+            <h3 class="group_name"><em>{{.Name}}</em></h3>
+            <ul>
+            {{range .Units}}
+                <li><a href="/unit?{{.}}">{{.}}</a></li>
+            {{end}}
+            </ul>
+        {{end}}
+        <br><hr>
+    {{end}}
+
+    <br><hr>
+
+</body>
+</html>

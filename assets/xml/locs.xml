@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<locations>
+    <!-- Program creates a loc[@id='game_loc'] when user has entered it. -->
+
+    <def>
+        <!-- DEFAULT PATHS -->
+        <loc id="game_loc">C:/Program Files (x86)/Steam/steamapps/common/Mount &amp; Blade II Bannerlord</loc>
+
+        <!-- WSL path -->
+        <!-- <loc id="game_loc">/mnt/c/Program Files (x86)/Steam/steamapps/common/Mount &amp; Blade II Bannerlord</loc> -->
+    </def>
+    <rel>
+        <!-- RELATIVE PATHS -->
+        <loc id="spnpccharacters">Modules/SandBoxCore/ModuleData/spnpccharacters.xml</loc>
+        <loc id="spcultures">Modules/SandBoxCore/ModuleData/spcultures.xml</loc>
+        <set id="spitems">
+            <loc id="weapons">Modules/SandBoxCore/ModuleData/spitems/weapons.xml</loc>
+            <loc id="shields">Modules/SandBoxCore/ModuleData/spitems/shields.xml</loc>
+
+            <loc id="arm_armors">Modules/SandBoxCore/ModuleData/spitems/arm_armors.xml</loc>
+            <loc id="body_armors">Modules/SandBoxCore/ModuleData/spitems/body_armors.xml</loc>
+            <loc id="head_armors">Modules/SandBoxCore/ModuleData/spitems/head_armors.xml</loc>
+            <loc id="leg_armors">Modules/SandBoxCore/ModuleData/spitems/leg_armors.xml</loc>
+            <loc id="shoulder_armors">Modules/SandBoxCore/ModuleData/spitems/shoulder_armors.xml</loc>
+
+            <loc id="horses_and_others">Modules/SandBoxCore/ModuleData/spitems/horses_and_others.xml</loc>
+            <loc id="tournament_weapons">Modules/SandBoxCore/ModuleData/spitems/tournament_weapons.xml</loc>
+        </set>
+    </rel>
+</locations>
